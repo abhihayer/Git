@@ -1,0 +1,195 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20221129174926
+Username: LAPTOP-DDN64IT0\COSMOS
+RunAs User: LAPTOP-DDN64IT0\COSMOS
+Configuration Name: 
+Machine: LAPTOP-DDN64IT0 (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 1700
+PSVersion: 5.1.22000.832
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.832
+BuildVersion: 10.0.22000.832
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\GitCommandLog.txt
+PS D:\Practice\GIT_Practice> git config --global user.name "abhihayer"
+
+PS D:\Practice\GIT_Practice> git config --global user.email "abhihayer9@gmail.com"
+
+PS D:\Practice\GIT_Practice> git init
+Initialized empty Git repository in D:/Practice/GIT_Practice/.git/
+PS D:\Practice\GIT_Practice> git add *
+
+PS D:\Practice\GIT_Practice> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   GitCommandLog.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   GitCommandLog.txt
+PS D:\Practice\GIT_Practice> git commit -m "First commit"
+[master (root-commit) 91f4190] First commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 GitCommandLog.txt
+PS D:\Practice\GIT_Practice> git remote add origin https://github.com/abhihayer/Git.git
+
+PS D:\Practice\GIT_Practice> git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 217 bytes | 217.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/abhihayer/Git.git
+ * [new branch]      master -> master
+PS D:\Practice\GIT_Practice> git clone https://github.com/abhihayer/Git.git
+Cloning into 'Git'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+PS D:\Practice\GIT_Practice> ls
+
+
+    Directory: D:\Practice\GIT_Practice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        02-12-2022     10:16                Git
+-a----        29-11-2022     18:05           1384 GitCommandLog.txt
+
+
+PS D:\Practice\GIT_Practice> cd ./Git
+PS D:\Practice\GIT_Practice\Git> ls
+
+
+    Directory: D:\Practice\GIT_Practice\Git
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        02-12-2022     10:16              0 GitCommandLog.txt
+-a----        02-12-2022     10:24            141 Info.txt
+
+
+PS D:\Practice\GIT_Practice\Git> git add *
+
+PS D:\Practice\GIT_Practice\Git> git status
+
+PS D:\Practice\GIT_Practice\Git> git commit -m "This is commit from cloned folder from github namely Git"
+
+PS D:\Practice\GIT_Practice\Git> git push origin master
+
+PS D:\Practice\GIT_Practice\Git> cd ..
+PS D:\Practice\GIT_Practice> git pull origin master
+
+PS D:\Practice\GIT_Practice> ls
+
+
+    Directory: D:\Practice\GIT_Practice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        02-12-2022     10:23                Git
+-a----        02-12-2022     10:36           3266 GitCommandLog.txt
+-a----        02-12-2022     10:36            141 Info.txt
+
+
+PS D:\Practice\GIT_Practice> git checkout -b develop
+
+PS D:\Practice\GIT_Practice> git branch
+
+PS D:\Practice\GIT_Practice> git add *
+
+PS D:\Practice\GIT_Practice> git rm --cached Git
+
+PS D:\Practice\GIT_Practice> git rm -f --cached Git
+
+PS D:\Practice\GIT_Practice> git status
+
+PS D:\Practice\GIT_Practice> git commit -m "This is for git branch demo"
+
+PS D:\Practice\GIT_Practice> git push origin develop
+
+PS D:\Practice\GIT_Practice> cd Git
+PS D:\Practice\GIT_Practice\Git> git pull origin develop
+
+PS D:\Practice\GIT_Practice\Git> git checkout 'develop'
+
+PS D:\Practice\GIT_Practice\Git> git add 'info.txt'
+
+PS D:\Practice\GIT_Practice\Git> git status
+
+PS D:\Practice\GIT_Practice\Git> git add 'info.txt'
+
+PS D:\Practice\GIT_Practice\Git> git status
+
+PS D:\Practice\GIT_Practice\Git> git add 'Info.txt'
+
+PS D:\Practice\GIT_Practice\Git> git status
+
+PS D:\Practice\GIT_Practice\Git> git commit -m "Pacticing commit"
+
+PS D:\Practice\GIT_Practice\Git> git push origin develop
+
+PS D:\Practice\GIT_Practice\Git> git checkout master
+
+PS D:\Practice\GIT_Practice\Git> git pull origin master
+
+PS D:\Practice\GIT_Practice\Git> git merge develop
+
+PS D:\Practice\GIT_Practice\Git> git branch
+
+PS D:\Practice\GIT_Practice\Git> git add *
+
+PS D:\Practice\GIT_Practice\Git> git status
+
+PS D:\Practice\GIT_Practice\Git> git merge develop
+
+PS D:\Practice\GIT_Practice\Git> git push origin master
+
+PS D:\Practice\GIT_Practice\Git> cd ..
+PS D:\Practice\GIT_Practice> git branch
+
+PS D:\Practice\GIT_Practice> git pull origin develop
+
+PS D:\Practice\GIT_Practice> git checkout master
+
+PS D:\Practice\GIT_Practice> git branch
+
+PS D:\Practice\GIT_Practice> git status
+
+PS D:\Practice\GIT_Practice> git add *
+
+PS D:\Practice\GIT_Practice> git rm -f --cached Git
+
+PS D:\Practice\GIT_Practice> git status
+
+PS D:\Practice\GIT_Practice> git commit -m "final commit"
+
+PS D:\Practice\GIT_Practice> git push origin develop
+
+PS D:\Practice\GIT_Practice> git checkout master
+
+PS D:\Practice\GIT_Practice> git checkout -f master
+
+PS D:\Practice\GIT_Practice> git merge develop
+
+PS D:\Practice\GIT_Practice> git merge -f develop
+
+PS D:\Practice\GIT_Practice> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20221202130340
+**********************
