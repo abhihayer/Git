@@ -1,0 +1,1 @@
+If we don't have project on our system and we are taking it from github first time then we use clone command later we can use pull command.
