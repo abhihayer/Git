@@ -160,6 +160,7 @@ PS D:\Practice\GIT_Practice\Git> git merge develop
 PS D:\Practice\GIT_Practice\Git> git push origin master
 
 PS D:\Practice\GIT_Practice\Git> cd ..
+
 PS D:\Practice\GIT_Practice> git branch
 
 PS D:\Practice\GIT_Practice> git pull origin develop
