@@ -1,1 +1,4 @@
-If we don't have project on our system and we are taking it from github first time then we use clone command later we can use pull command.
+If we don't have project on our system and we are taking it from github first time then we use clone command later we can use pull 
+command.
+The branch can be created in order to don't disturb the working code in main/master branch and all development can be done on new 
+branch and after testing fully functional code can be pushed to main/master branch.
