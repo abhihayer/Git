@@ -91,3 +91,22 @@ PS D:\Practice\GIT_Practice\Git> git commit -m "This is commit from cloned folde
 PS D:\Practice\GIT_Practice\Git> git push origin master
 
 PS D:\Practice\GIT_Practice\Git> cd ..
+PS D:\Practice\GIT_Practice> git pull origin master
+
+PS D:\Practice\GIT_Practice> ls
+
+
+    Directory: D:\Practice\GIT_Practice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        02-12-2022     10:23                Git
+-a----        02-12-2022     10:36           3266 GitCommandLog.txt
+-a----        02-12-2022     10:36            141 Info.txt
+
+
+PS D:\Practice\GIT_Practice> git checkout -b develop
+
+PS D:\Practice\GIT_Practice> git branch
+
